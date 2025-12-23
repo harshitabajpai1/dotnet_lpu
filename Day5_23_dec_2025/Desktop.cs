@@ -10,15 +10,15 @@ namespace ComputerDetails
         
         {
             int ProcessorCost = 0;
-            if(Processor == "i3"){}
+            if(Processor == "i3")
             {
                 ProcessorCost = 1500;
             }
-            if(Processor == "i5"){}
+            if(Processor == "i5")
             {
                 ProcessorCost = 3000;
             }
-            if(Processor == "i7"){}
+            if(Processor == "i7")
             {
                 ProcessorCost = 4500;
             }
