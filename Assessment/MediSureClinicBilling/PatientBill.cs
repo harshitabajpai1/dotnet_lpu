@@ -1,0 +1,24 @@
+using System;
+namespace MediSureClinicBilling
+{
+    class PatientBill
+    {
+        #region Properties
+        public string BillID{get; set;}
+        public string PatientName{get;set;}
+
+        public bool HasInsurance{get;set;}
+        public decimal ConsultationFee{get;set;}
+
+        public decimal LabCharges{get;set;}
+
+        public decimal MedicineCharges{get;set;}
+
+        public decimal GrossAmount{get;set;}
+
+        public decimal DiscountAmount{get;set;}
+        public decimal FinalPayable{get;set;}
+
+        #endregion
+    }
+}

@@ -15,6 +15,7 @@ namespace CakeShop
                 throw new InvalidFlavourException();
             }
 
+            // validate the Quantity Exception
             if(QuantityInKg <= 0)
             {
                 throw new InvalidQuantityException();

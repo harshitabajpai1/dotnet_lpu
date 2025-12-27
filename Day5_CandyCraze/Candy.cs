@@ -11,7 +11,7 @@ namespace CandyCraze
 
         public bool validateCandyFlavour()
         {
-            if(Flavour == "mint" || Flavour =="lemon" || Flavour == "strawberry")
+            if(Flavour == "Mint" || Flavour =="Lemon" || Flavour == "Strawberry")
             {
                 return true;
             }
