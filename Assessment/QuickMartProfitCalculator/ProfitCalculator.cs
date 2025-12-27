@@ -71,7 +71,7 @@ namespace QuickMart
             LastTransaction= transaction;
             HasLast = true;
 
-            Console.WriteLine("\nTransaction Saved Successfully");
+            Console.WriteLine("Transaction Saved Successfully");
             Console.WriteLine("Status: " + transaction.ProfitOrLossStatus);
             Console.WriteLine("Profit/Loss Amount: " + transaction.ProfitOrLossAmount);
             Console.WriteLine("Profit Margin (%): " + transaction.ProfitMarginPercent);
