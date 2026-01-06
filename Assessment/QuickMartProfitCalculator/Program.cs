@@ -9,8 +9,13 @@ while (flag)
     Console.WriteLine("===== QuickMart Menu =====");
     Console.WriteLine("1. Create Transaction");
     Console.WriteLine("2. View Last Transaction");
+<<<<<<< HEAD
     Console.WriteLine("3. Calculate Profit/Loss (Recompute & Print)");
     Console.WriteLine("4.Exit");
+=======
+    Console.WriteLine("3 .Calculate Profit/Loss (Recompute & Print)");
+    Console.WriteLine("4. Exit");
+>>>>>>> 34b5b296d327bdcc0cd1474959de48dd77ebea06
     Console.Write("Enter your choice: ");
 
     choice = int.Parse(Console.ReadLine());
