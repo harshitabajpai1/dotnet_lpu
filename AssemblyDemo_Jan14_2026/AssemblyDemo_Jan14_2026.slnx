@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ServiceLibrary/ServiceLibrary.csproj" />
+  <Project Path="UILogic/UILogic.csproj" Id="0d5b500b-b20a-4b86-b44d-10eee2e3e703" />
+</Solution>
