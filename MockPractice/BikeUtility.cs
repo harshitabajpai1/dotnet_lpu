@@ -15,18 +15,23 @@ class BikeUtility
     }
     public SortedDictionary<string,List<Bike>> GroupByBrand()
     {
-        SortedDictionary<string,List<Bike>> BikeGroupedbyBrand =
-        new SortedDictionary<String,List<Bike>>();
+        // SortedDictionary<string,List<Bike>> BikeGroupedbyBrand =
+        // new SortedDictionary<String,List<Bike>>();
 
-        foreach (var item in Program.bikeDetails.Values)
-        {
-            if (!BikeGroupedbyBrand.ContainsKey(item.Brand))
-            {
-                BikeGroupedbyBrand[item.Brand] = new List<Bike>();
-            }
+        // foreach (var item in Program.bikeDetails.Values)
+        // {
+        //     if (!BikeGroupedbyBrand.ContainsKey(item.Brand))
+        //     {
+        //         BikeGroupedbyBrand[item.Brand] = new List<Bike>();
+        //     }
 
-            BikeGroupedbyBrand[item.Brand].Add(item);
-        }
-        return BikeGroupedbyBrand;
+        //     BikeGroupedbyBrand[item.Brand].Add(item);
+        // }
+        // return BikeGroupedbyBrand;
+
+
+        return new SortedDictionary<string, List<Bike>>(
+            Program.bikeDetails.Values.GroupBy( b => b.Brand).ToDictionary(g => g.Key , g => g.ToList())
+        );
     }
 }
