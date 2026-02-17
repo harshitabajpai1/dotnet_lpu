@@ -41,7 +41,7 @@ namespace Services
             List<PrimaryEntity> result = new List<PrimaryEntity>();
             foreach(var item in _data)
             {
-                result.AddRange(item.Value);c
+                result.AddRange(item.Value);
             }
             return result;
         }

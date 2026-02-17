@@ -13,9 +13,10 @@ public class ProductRepository<T> where T : class, IProduct
         }
     }
 
+//it will return the product according to the condition so we will apply the filter where we call the function
     public IEnumerable<T> FindProducts(Func<T, bool> predicate)
     {
-        
+        return _products.Where(predicate);
     }
 
     public decimal CalculateTotalValue()
