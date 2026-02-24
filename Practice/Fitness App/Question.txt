@@ -1,0 +1,28 @@
+Fitness app
+we have a member class which have 
+          name 
+          stepcounts for 4 weeks
+
+We have to maintain a leaderBoard
+
+now we have to operate the following function
+1. Add member to the leaderBoard Method name: AddMember(Member record)
+
+2. Get the member who have more stepCount than the thresholld value in how many many number of weeks 
+                                                              they have achieved equal or more than threshold
+
+    eg: John 3
+        Emma 2
+
+3.Calculate the overall average for all the members in the record and their weeklystep count
+
+in Main function
+
+menu based website
+1- to add member
+2 - (threshold input) to check the weekly step count more than threshold
+3 - average
+4 - exit and then print ("thank you for using — fitness app")
+                 — this is a em dash
+                 – this is a en dash
+                 - this is a hyphen
