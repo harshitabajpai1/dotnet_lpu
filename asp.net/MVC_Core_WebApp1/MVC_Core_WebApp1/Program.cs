@@ -14,6 +14,27 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
+
+//app.Use(async (context, next) =>
+//{
+//    await context.Response.WriteAsync("1.What is your name: \n");
+//    await next.Invoke();  //it will invoke the next component in the pipeline
+
+//});
+//app.Use(async (context, next) =>
+//{
+//    //await context.Response.WriteAsync("2.In which city you liv?e: \n");
+//    await next.Invoke();
+//    await context.Response.WriteAsync("2.In which city you live: \n");
+
+//});
+//app.Run(async context =>
+//{
+//    await context.Response.WriteAsync("3.Purpose of visit here: \n");
+
+//});
 app.UseRouting();
 
 app.UseAuthorization();

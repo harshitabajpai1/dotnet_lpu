@@ -68,6 +68,18 @@ namespace MVC_Core_WebApp1.Controllers
             }
         }
 
+        //show dummy function
+            public ActionResult ShowDummy(int id)
+            {
+            Student s = studentRepo.ShowDetailsById(id);
+            if(s == null)
+            {
+                return NotFound();
+            }
+            //string message = "Hello everyone";
+            return View("ShowDummy",s.Name);
+        }
+
         // GET: StudentController/Edit/5
         public ActionResult Edit(int id)
         {
