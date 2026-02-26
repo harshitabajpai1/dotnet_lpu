@@ -5,14 +5,15 @@
     Layout = "~/Views/Shared/MainLayout.cshtml";
 }
 
-<h1>Index1</h1>
+<h1>Our Products</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @* <a asp-action="Create">Create New</a> *@
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>Image</th>
             <th>
                 @Html.DisplayNameFor(model => model.ProductId)
             </th>
@@ -41,6 +42,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                    <img src="@item.ImageUrl" width="70" height="70" />
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ProductId)
             </td>
             <td>
@@ -62,9 +66,10 @@
                 @Html.DisplayFor(modelItem => item.StockQuantity)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ProductId },new {@class = "btn btn-warning"}) 
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-info" }) 
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-danger" })
+                    <a href="/Cart/Add/@item.ProductId"  class="btn btn-success btn-sm"> Add To Cart</a>
+                @* @Html.ActionLink("Edit", "Edit", new { id=item.ProductId },new {@class = "btn btn-warning"})  *@
+                    @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-info" })  *@
+                    @* @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-danger" }) *@
             </td>
         </tr>
 }

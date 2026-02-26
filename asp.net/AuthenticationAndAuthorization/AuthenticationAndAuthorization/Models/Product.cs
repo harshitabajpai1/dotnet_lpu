@@ -10,6 +10,8 @@
         public string Brand { get; set; }
         public int StockQuantity {  get; set; }
 
+        public string ImageUrl { get; set; }
+
 
 } 
 }
