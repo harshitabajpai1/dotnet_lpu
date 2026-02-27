@@ -19,11 +19,11 @@ namespace AuthenticationAndAuthorization.Controllers
         }
         public IActionResult Index2()
         {
-            return View();
+            return View(productRepo.GetAllElectronicProducts());
         }
         public IActionResult Index3()
         {
-            return View();
+            return View(productRepo.GetAllClothProduct());
         }
     }
 }

@@ -15,7 +15,7 @@ namespace AuthenticationAndAuthorization.Controllers
         public IActionResult Add(int id)
         {
             //find the product in GetAllCosmeticProducts
-            var product = repo.GetAllCosmeticProducts().FirstOrDefault(p => p.ProductId == id);
+            var product = repo.GetAllProducts().FirstOrDefault(p => p.ProductId == id);
 
             //check if the product is in the cart or not by using first or fefault it exict increase the quantitty
             var exist = CartStorage.CartItems.FirstOrDefault(c => c.Product.ProductId == id);
