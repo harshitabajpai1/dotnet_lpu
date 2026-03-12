@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FirstWebApiDemo.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography.X509Certificates;
 
@@ -48,6 +49,19 @@ namespace FirstWebApiDemo.Controllers
         public int AddMe(int num1,int num2)
         {
             return num1 + num2;
+        }
+        [Route("DoSomeTask1")]
+        [HttpPost]
+        public ActionResult DoSomeTask1(int empId,[FromBody] string Name)
+        {
+            return Created();
+
+        }
+        [Route("DoSomeTask2")]
+        [HttpPost]
+        public void DoSomeTask2([FromQuery]Student sObj)
+        {
+
         }
 
 
