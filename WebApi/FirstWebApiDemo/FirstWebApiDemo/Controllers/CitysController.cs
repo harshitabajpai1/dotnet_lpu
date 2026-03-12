@@ -52,6 +52,8 @@ namespace FirstWebApiDemo.Controllers
         }
         [Route("DoSomeTask1")]
         [HttpPost]
+
+        //Default behavoir for the premitive data type is query type , we can change it
         public ActionResult DoSomeTask1(int empId,[FromBody] string Name)
         {
             return Created();
@@ -59,6 +61,8 @@ namespace FirstWebApiDemo.Controllers
         }
         [Route("DoSomeTask2")]
         [HttpPost]
+
+        //Default behaviour for the composite  type is body type , we can change it
         public void DoSomeTask2([FromQuery]Student sObj)
         {
 
