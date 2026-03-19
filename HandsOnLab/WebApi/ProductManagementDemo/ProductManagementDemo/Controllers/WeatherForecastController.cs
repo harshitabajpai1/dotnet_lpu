@@ -1,10 +1,7 @@
-using JwtAutheticationDemo.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JwtAutheticationDemo.Controllers
+namespace ProductManagementDemo.Controllers
 {
-    [Authorize(Roles = UserRoles.Admin)]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

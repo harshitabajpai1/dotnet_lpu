@@ -28,6 +28,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 
 
 //JWT Authentication
+//bearer token
 
 builder.Services.AddAuthentication(options =>
 {
