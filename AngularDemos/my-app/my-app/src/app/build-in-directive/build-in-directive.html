@@ -1,0 +1,13 @@
+<p>build-in-directive works!</p>
+
+<div [ngClass]="{ active: isActive, 'fw-bold': true }">
+  Capgemini dotnet batch
+</div>
+<div class="{active:isActive, font-weight: bold}">
+  Capgemini dotnet batch
+</div>
+<div
+  [ngClass]="{ active: isActive }"
+  [ngStyle]="{ 'font-weight': 'bold' }">
+  Capgemini dotnet batch
+</div>

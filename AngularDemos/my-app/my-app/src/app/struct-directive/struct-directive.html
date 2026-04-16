@@ -1,0 +1,31 @@
+<p>struct-directive works!</p>
+
+@if(isAdmin){
+  <div>
+
+    <div>
+      <h5>Showing Admin panel</h5>
+      <ul>
+        <li><a href ="">Add Customer</a></li>
+        <li>Add Vendor</li>
+      </ul>
+    </div>
+
+  </div>>
+
+}
+@else{
+  <div>
+    <div>
+      <h5>Showing Customer panel</h5>
+      <button class="btn btn-primary">Click Me</button>
+    </div>
+  </div>
+
+}
+<ol>
+  @for(item of empList; track $index){
+    <li>{{item}}</li>
+  }
+</ol>
+
