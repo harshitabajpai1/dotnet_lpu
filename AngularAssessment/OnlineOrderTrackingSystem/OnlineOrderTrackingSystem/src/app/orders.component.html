@@ -1,0 +1,20 @@
+<h1>Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Order Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.productName }}</td>
+      <td>{{ order.price | currency:'INR' }}</td>
+      <td>{{ order.orderDate | date:'medium' }}</td>
+      <td>status: {{ order.status | OrderStatus }}</td>
+    </tr>
+  </tbody>
+</table>
